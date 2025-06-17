@@ -1,0 +1,195 @@
+@tailwind base; /* Injects Tailwind's base styles (reset, normalize, etc.) */
+@tailwind components; /* Enables component classes */
+@tailwind utilities; /* Enables utility classes */
+
+/* ============================= */
+/* 🌈 Design Tokens & Theme      */
+/* ============================= */
+@layer base {
+  :root {
+    /* Light mode variables */
+    --background: 0 0% 100%; /* Page background */
+    --foreground: 222.2 84% 4.9%; /* Default text color */
+
+    --card: 0 0% 100%; /* Card background */
+    --card-foreground: 222.2 84% 4.9%; /* Card text */
+
+    --popover: 0 0% 100%; /* Popover background */
+    --popover-foreground: 222.2 84% 4.9%; /* Popover text */
+
+    --primary: 222.2 47.4% 11.2%; /* Primary button background */
+    --primary-foreground: 210 40% 98%; /* Primary button text */
+
+    --secondary: 210 40% 96.1%; /* Secondary background */
+    --secondary-foreground: 222.2 47.4% 11.2%; /* Secondary text */
+
+    --muted: 210 40% 96.1%; /* Muted background (e.g., badges) */
+    --muted-foreground: 215.4 16.3% 46.9%; /* Muted text */
+
+    --accent: 210 40% 96.1%; /* Accent background (e.g., tags) */
+    --accent-foreground: 222.2 47.4% 11.2%; /* Accent text */
+
+    --destructive: 0 84.2% 60.2%; /* Error/destructive background */
+    --destructive-foreground: 210 40% 98%; /* Destructive text */
+
+    --border: 214.3 31.8% 91.4%; /* Border color for inputs/cards */
+    --input: 214.3 31.8% 91.4%; /* Input background */
+    --ring: 222.2 84% 4.9%; /* Focus ring color */
+
+    --radius: 0.5rem; /* Default border-radius (8px) */
+
+    /* Sidebar Custom Tokens */
+    --sidebar-background: 0 0% 98%; /* Sidebar background */
+    --sidebar-foreground: 240 5.3% 26.1%; /* Sidebar text */
+    --sidebar-primary: 240 5.9% 10%; /* Sidebar primary color */
+    --sidebar-primary-foreground: 0 0% 98%; /* Sidebar primary text */
+    --sidebar-accent: 240 4.8% 95.9%; /* Sidebar accent color */
+    --sidebar-accent-foreground: 240 5.9% 10%; /* Sidebar accent text */
+    --sidebar-border: 220 13% 91%; /* Sidebar border color */
+    --sidebar-ring: 217.2 91.2% 59.8%; /* Sidebar focus ring */
+  }
+
+  .dark {
+    /* Dark mode overrides */
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+    /* Dark sidebar tokens */
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border; /* Apply border color from theme to all elements */
+  }
+
+  body {
+    @apply bg-background text-foreground; /* Apply background and text colors from theme */
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif; /* Custom font stack */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold; /* Bold headings */
+  }
+}
+
+/* ============================= */
+/* 💡 Utility Classes            */
+/* ============================= */
+@layer components {
+  .line-clamp-2 {
+    display: -webkit-box; /* Create multi-line box */
+    -webkit-line-clamp: 2; /* Clamp to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* Hide overflow text */
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Clamp to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* ============================= */
+/* 🎯 Swiper Custom Styles       */
+/* ============================= */
+.featured-swiper {
+  padding-bottom: 50px !important; /* Extra space for pagination bullets */
+}
+
+.featured-swiper .swiper-pagination {
+  bottom: 0 !important; /* Move bullets to bottom */
+}
+
+.featured-swiper .swiper-pagination-bullet {
+  width: 12px !important; /* Size of bullets */
+  height: 12px !important;
+  margin: 0 6px !important; /* Spacing between bullets */
+  opacity: 0.3 !important;
+  transition: all 0.3s ease !important; /* Smooth transition */
+}
+
+.featured-swiper .swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  transform: scale(1.2) !important; /* Scale up active bullet */
+}
+
+/* ============================= */
+/* ✨ Custom Transitions         */
+/* ============================= */
+@layer utilities {
+  .transition-all-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth transition */
+  }
+
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Lift effect on hover */
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px); /* Slight upward lift */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Shadow effect */
+  }
+}
+
+/* ============================= */
+/* 🖱️ Custom Scrollbar           */
+/* ============================= */
+::-webkit-scrollbar {
+  width: 8px; /* Width of scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1; /* Thumb color */
+  border-radius: 4px; /* Rounded thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8; /* Hover effect */
+}
