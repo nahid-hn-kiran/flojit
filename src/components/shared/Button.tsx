@@ -15,13 +15,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         className={cn(
-          "inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
+          "inline-flex items-center justify-center rounded-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
 
           // Variants
           variant === "default" &&
-            "bg-escapigo-orange text-white hover:bg-opacity-90",
+            "bg-flogit-darkgray text-white hover:bg-opacity-90",
           variant === "outline" &&
-            "border border-escapigo-orange bg-transparent text-escapigo-orange hover:bg-escapigo-orange hover:text-white",
+            "border border-flogit-lightgray bg-transparent text-escapigo-orange hover:bg-escapigo-orange hover:text-white",
           variant === "ghost" &&
             "bg-transparent text-escapigo-orange hover:bg-muted",
           variant === "link" &&

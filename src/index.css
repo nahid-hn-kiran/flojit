@@ -21,7 +21,7 @@
     --primary-foreground: 210 40% 98%; /* Primary button text */
 
     --secondary: 210 40% 96.1%; /* Secondary background */
-    --secondary-foreground: 222.2 47.4% 11.2%; /* Secondary text */
+    --secondary-foreground: 222.2 47.4% 1 1.2%; /* Secondary text */
 
     --muted: 210 40% 96.1%; /* Muted background (e.g., badges) */
     --muted-foreground: 215.4 16.3% 46.9%; /* Muted text */
@@ -36,7 +36,7 @@
     --input: 214.3 31.8% 91.4%; /* Input background */
     --ring: 222.2 84% 4.9%; /* Focus ring color */
 
-    --radius: 0.5rem; /* Default border-radius (8px) */
+    --radius: 2rem; /* Default border-radius (8px) */
 
     /* Sidebar Custom Tokens */
     --sidebar-background: 0 0% 98%; /* Sidebar background */

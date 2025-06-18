@@ -67,9 +67,9 @@ const Header = () => {
       </div>
 
       {/* Navigation Bar */}
-      <div className="bg-gray-50 border-t border-gray-100">
+      <div className="">
         <div className="container mx-auto px-4">
-          <nav className="flex items-center space-x-8 h-12">
+          <nav className="flex items-center justify-center space-x-8 h-12">
             <Link
               to="/"
               className="text-orange-500 font-semibold text-sm hover:text-orange-600 transition-colors"
