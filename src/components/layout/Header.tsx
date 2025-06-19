@@ -89,7 +89,7 @@ const Header = () => {
               Browse Categories
             </Link>
             <Link
-              to="/listings"
+              to="/browse-listings"
               className="text-gray-700 font-medium text-sm hover:text-orange-500 transition-colors"
             >
               Browse All Listing

@@ -2,8 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "@/pages/Home/Home";
 import NotFound from "@/pages/NotFound";
 import About from "@/pages/About/About";
-import Listings from "@/pages/Listings";
-
+import BrowseListings from "@/pages/BrowseListing/BrowseListings";
 // Protected route component
 // const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 //   const { isAuthenticated, isLoading } = useAuth();
@@ -28,7 +27,7 @@ const AppRoutes = () => {
     <Routes>
       {/* Public routes */}
       <Route path="/" element={<Home />} />
-      <Route path="/listings" element={<Listings />} />
+      <Route path="/browse-listings" element={<BrowseListings />} />
       <Route path="/about-us" element={<About />} />
 
       {/* Protected routes */}
