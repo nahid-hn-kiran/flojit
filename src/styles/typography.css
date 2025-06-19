@@ -1,0 +1,71 @@
+@layer components {
+  /* ====================== */
+  /* 🧱 Responsive Typography System */
+  /* ====================== */
+
+  /* Headings */
+  .heading-xl {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight;
+  }
+
+  .heading-lg {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-snug;
+  }
+
+  .heading-md {
+    @apply text-xl md:text-2xl lg:text-3xl font-bold text-foreground;
+  }
+
+  .heading-sm {
+    @apply text-lg md:text-xl font-semibold text-foreground;
+  }
+
+  .heading-xs {
+    @apply text-base md:text-lg font-semibold text-foreground;
+  }
+
+  /* Subtitles / Lead Texts */
+  .subtitle-lg {
+    @apply text-base md:text-lg font-medium text-muted-foreground;
+  }
+
+  .subtitle-sm {
+    @apply text-sm md:text-base font-medium text-muted-foreground;
+  }
+
+  /* Body Texts */
+  .body-base {
+    @apply text-sm md:text-base text-foreground;
+  }
+
+  .body-sm {
+    @apply text-xs md:text-sm text-muted-foreground;
+  }
+
+  .body-xs {
+    @apply text-[11px] md:text-xs text-muted-foreground;
+  }
+
+  /* UI Labels */
+  .label {
+    @apply text-sm font-medium text-foreground;
+  }
+
+  .caption {
+    @apply text-xs text-muted-foreground;
+  }
+
+  /* Price Texts */
+  .price-text {
+    @apply text-base md:text-lg font-semibold text-flogit-orange;
+  }
+
+  /* CTA & Links */
+  /* .button-text {
+    @apply text-sm md:text-base font-semibold text-primary-foreground;
+  } */
+
+  .link-text {
+    @apply text-sm md:text-base font-medium text-primary hover:underline;
+  }
+}

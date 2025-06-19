@@ -8,22 +8,20 @@ import PopularCategories from "./sections/PopularCategories";
 import WhyChoose from "./sections/WhyChoose";
 import Newsletter from "./sections/Newsletter";
 import "./Home.css";
+import MainLayout from "@/layouts/MainLayout";
 
 const Home = () => {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
-        <HeroSection />
-        <FeaturedListings />
-        <RecentlyListed />
-        <HowItWorks />
-        <PopularCategories />
-        <WhyChoose />
-        <Newsletter />
-      </main>
+    <MainLayout>
+      <HeroSection />
+      <FeaturedListings />
+      <RecentlyListed />
+      <HowItWorks />
+      <PopularCategories />
+      <WhyChoose />
+      <Newsletter />
       <Footer />
-    </div>
+    </MainLayout>
   );
 };
 

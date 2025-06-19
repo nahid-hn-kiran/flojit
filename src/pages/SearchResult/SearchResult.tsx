@@ -1,13 +1,10 @@
-import React from "react";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Star } from "lucide-react";
-import MainLayout from "@/layouts/MainLayout";
+import Button from "@/components/shared/Button";
 import { FlogitPagination } from "@/components/shared/Pagination";
+import { Card, CardContent } from "@/components/ui/card";
+import MainLayout from "@/layouts/MainLayout";
+import { Star } from "lucide-react";
 
-const Listings = () => {
+const SearchResult = () => {
   const allListings = [
     {
       id: 1,
@@ -64,7 +61,6 @@ const Listings = () => {
       image: "bg-indigo-100",
     },
   ];
-
   return (
     <MainLayout>
       <div className="py-20">
@@ -119,4 +115,4 @@ const Listings = () => {
   );
 };
 
-export default Listings;
+export default SearchResult;

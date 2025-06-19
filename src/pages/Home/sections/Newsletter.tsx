@@ -1,18 +1,18 @@
-
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 const Newsletter = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-orange-500 to-orange-600">
+    <section className="py-16 bg-gradient-to-r bg-flogit-orange">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-white mb-4">
             Stay updated on latest deals and auctions!
           </h2>
           <p className="text-orange-100 text-lg">
-            Sign up for our newsletter to get the best of Flogit.je delivered to your inbox
+            Sign up for our newsletter to get the best of Flogit.je delivered to
+            your inbox
           </p>
         </div>
 

@@ -77,40 +77,22 @@ const Header = () => {
               Home
             </Link>
             <Link
-              to="/categories"
-              className="text-gray-700 font-medium text-sm hover:text-orange-500 transition-colors"
-            >
-              Categories
-            </Link>
-            <Link
-              to="/auctions"
-              className="text-gray-700 font-medium text-sm hover:text-orange-500 transition-colors"
-            >
-              Auctions
-            </Link>
-            <Link
-              to="/buy-now"
-              className="text-gray-700 font-medium text-sm hover:text-orange-500 transition-colors"
-            >
-              Buy Now
-            </Link>
-            <Link
-              to="/sell"
-              className="text-gray-700 font-medium text-sm hover:text-orange-500 transition-colors"
-            >
-              Sell
-            </Link>
-            <Link
-              to="/about"
+              to="/about-us"
               className="text-gray-700 font-medium text-sm hover:text-orange-500 transition-colors"
             >
               About Us
             </Link>
             <Link
-              to="/contact"
+              to="/categories"
               className="text-gray-700 font-medium text-sm hover:text-orange-500 transition-colors"
             >
-              Contact
+              Browse Categories
+            </Link>
+            <Link
+              to="/listings"
+              className="text-gray-700 font-medium text-sm hover:text-orange-500 transition-colors"
+            >
+              Browse All Listing
             </Link>
           </nav>
         </div>

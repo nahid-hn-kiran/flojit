@@ -14,7 +14,7 @@ const Footer = () => {
               <img src={constants.footerLogo} alt="Flojit.je" />
             </Link>
             <p className="text-sm text-gray-400">
-              © 2024 Flogit.je. All rights reserved.
+              &copy;2025 Flogit.je. All rights reserved.
             </p>
           </div>
 
