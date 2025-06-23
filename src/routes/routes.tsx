@@ -6,6 +6,7 @@ import BrowseListings from "@/pages/BrowseListing/BrowseListings";
 import ProductDetailsPage from "@/pages/ProductDetails/ProductDetails";
 import Login from "@/pages/Auth/Login/Login";
 import Register from "@/pages/Auth/Register/Register";
+import HowToUse from "@/pages/HowToUse/HowToUse";
 // Protected route component
 // const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 //   const { isAuthenticated, isLoading } = useAuth();
@@ -35,6 +36,7 @@ const AppRoutes = () => {
       <Route path="/product-details" element={<ProductDetailsPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/how-to-use" element={<HowToUse />} />
 
       {/* Protected routes */}
       {/* <Route
