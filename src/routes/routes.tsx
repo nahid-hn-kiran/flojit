@@ -7,6 +7,7 @@ import ProductDetailsPage from "@/pages/ProductDetails/ProductDetails";
 import Login from "@/pages/Auth/Login/Login";
 import Register from "@/pages/Auth/Register/Register";
 import HowToUse from "@/pages/HowToUse/HowToUse";
+import ContactUs from "@/pages/ContactUs/ContactUs";
 // Protected route component
 // const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 //   const { isAuthenticated, isLoading } = useAuth();
@@ -37,6 +38,7 @@ const AppRoutes = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/how-to-use" element={<HowToUse />} />
+      <Route path="/contact-us" element={<ContactUs />} />
 
       {/* Protected routes */}
       {/* <Route
