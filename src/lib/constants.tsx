@@ -3,6 +3,7 @@ import footerLogo from "../assets/images/FooterLogo.svg";
 import heroImg from "../assets/images/hero-image.png";
 import heroBGImg from "../assets/images/heroBGImg.png";
 import AboutHeroBanner from "../assets/images/about-banner.png";
+import formBidHammer from "../assets/images/bidding-hammer.png";
 
 export const constants = {
   siteLogo,
@@ -10,4 +11,5 @@ export const constants = {
   heroImg,
   heroBGImg,
   AboutHeroBanner,
+  formBidHammer,
 };

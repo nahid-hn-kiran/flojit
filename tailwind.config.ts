@@ -58,7 +58,8 @@ export default {
           dark: "#303030",
           darkgray: "#20384F",
           lightgray: "#20384F",
-          blurwhite: "#FFFFFF0D",
+          blurOrange: "#FCF9F3",
+          white: "#FFFFFF",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
