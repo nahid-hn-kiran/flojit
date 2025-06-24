@@ -9,6 +9,7 @@ import Register from "@/pages/Auth/Register/Register";
 import HowToUse from "@/pages/HowToUse/HowToUse";
 import ContactUs from "@/pages/ContactUs/ContactUs";
 import BiddingPage from "@/pages/BiddingPage/BiddingPage";
+import PaymentProcess01 from "@/pages/PaymentProcess/PaymentProcess01";
 // Protected route component
 // const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 //   const { isAuthenticated, isLoading } = useAuth();
@@ -41,6 +42,7 @@ const AppRoutes = () => {
       <Route path="/how-to-use" element={<HowToUse />} />
       <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/bidding-page" element={<BiddingPage />} />
+      <Route path="/outbid" element={<PaymentProcess01 />} />
 
       {/* Protected routes */}
       {/* <Route

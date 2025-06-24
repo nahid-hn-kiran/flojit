@@ -99,6 +99,9 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      boxShadow: {
+        "card-shadow": "0 0 10px #00000029", // uniform shadow from all sides
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
