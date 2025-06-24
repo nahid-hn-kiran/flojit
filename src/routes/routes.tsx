@@ -12,6 +12,7 @@ import BiddingPage from "@/pages/BiddingPage/BiddingPage";
 import PaymentProcess01 from "@/pages/PaymentProcess/PaymentProcess01";
 import PaymentProcess02 from "@/pages/PaymentProcess/PaymentProcess02";
 import PaymentProcess03 from "@/pages/PaymentProcess/PaymentProcess03";
+import PaymentProcess04 from "@/pages/PaymentProcess/PaymentProcess04";
 // Protected route component
 // const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 //   const { isAuthenticated, isLoading } = useAuth();
@@ -47,6 +48,7 @@ const AppRoutes = () => {
       <Route path="/payment-process-01" element={<PaymentProcess01 />} />
       <Route path="/payment-process-02" element={<PaymentProcess02 />} />
       <Route path="/payment-process-03" element={<PaymentProcess03 />} />
+      <Route path="/payment-process-04" element={<PaymentProcess04 />} />
 
       {/* Protected routes */}
       {/* <Route
