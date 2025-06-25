@@ -1,11 +1,10 @@
-@tailwind base; /* Injects Tailwind's base styles (reset, normalize, etc.) */
-@tailwind components; /* Enables component classes */
-@tailwind utilities; /* Enables utility classes */
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 /* ============================= */
 /* Google Fonts      */
 /* ============================= */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base; /* Injects Tailwind's base styles (reset, normalize, etc.) */
+@tailwind components; /* Enables component classes */
+@tailwind utilities; /* Enables utility classes */
 
 /* ============================= */
 /* 🌈 Design Tokens & Theme      */

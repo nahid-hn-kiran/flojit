@@ -83,6 +83,12 @@ const Header = () => {
               About Us
             </Link>
             <Link
+              to="/dashboard"
+              className="text-gray-700 font-medium text-sm hover:text-orange-500 transition-colors"
+            >
+              Dashboard
+            </Link>
+            <Link
               to="/categories"
               className="text-gray-700 font-medium text-sm hover:text-orange-500 transition-colors"
             >
