@@ -2,6 +2,7 @@
 /* ============================= */
 /* Google Fonts      */
 /* ============================= */
+
 @tailwind base; /* Injects Tailwind's base styles (reset, normalize, etc.) */
 @tailwind components; /* Enables component classes */
 @tailwind utilities; /* Enables utility classes */
